@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header img {
+    font-size: 0.3em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.loan-application {
+    display: flex;
+    margin: 2rem auto;
+    align-items: flex-start;
+}
+
+.lobby{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.image-containers {
+    flex: 1;
+    position: relative;
+}
+
+.image-containers img {
+    max-width: 100%;
+    /* height: 1200px; */
+    border-radius: 5px;
+}
+
+.w3-container{
+   margin: 0 40px;
+}
+
+.caption {
+    bottom: 0rem;
+    /* left: 1rem; */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+
+form {
+    flex: 1;
+    padding: 2rem;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+form input {
+    width: calc(100% - 1rem);
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 50%;
+    padding: 0.5rem;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: .5rem;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.rules {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    
+}
+
+.rule {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    border-top:4px solid #4caf50;
+
+}
+
+.rule h3 {
+    margin-top: 0;
+}
+
+.rule ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rule ul li {
+    background: url('check.png') no-repeat left center;
+    background-size: 1rem 1rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .loan-application {
+        flex-direction: row;
+    }
+
+    .rules {
+        flex-direction: row;
+    }
+}
